@@ -35,3 +35,12 @@ Given [specific context]
 When [specific action]
 Then [specific outcome]
 ```
+
+```example
+Given I am logged in as a Customer Support Manager
+And there are active tickets assigned across multiple agents
+When I open the "Live Support Dashboard"
+Then I see the total number of open tickets, grouped by priority
+And I see each agent’s current ticket count and status
+And the data refreshes automatically every 60 seconds
+```
